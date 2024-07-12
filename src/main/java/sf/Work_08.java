@@ -7,7 +7,7 @@ import java.util.Stack;
  *
  * @Author: zws
  * @Date: 2024-07-11
- * @Description:
+ * @Description: 使用两个栈模拟队列
  */
 class MyQueue {
     public Stack<Integer> pushStack = new Stack<>();

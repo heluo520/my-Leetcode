@@ -15,7 +15,7 @@ public class Work_06 implements PrintRunTime{
     public static void main(String[] args) throws InterruptedException {
         PrintRunTime.proxyRun(new Work_06(),"()");
     }
-    public static boolean isValid(String s) {
+    public  boolean isValid(String s) {
         if(s==null){//空不符合
             return false;
         }

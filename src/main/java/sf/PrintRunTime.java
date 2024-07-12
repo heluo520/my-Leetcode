@@ -32,7 +32,7 @@ public interface PrintRunTime {
             Method method = proxyFactory.getMethod("getProxyInstance", Object.class);
             PrintRunTime proxy = (PrintRunTime) method.invoke(null, target);
             proxy.run(args);
-        } catch (ClassNotFoundException | IllegalAccessException | InvocationTargetException | NoSuchMethodException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
