@@ -19,6 +19,7 @@ class MyQueue {
 
     public void push(int x) {
         while (!outStack.empty()){
+            //将出栈栈中的元素先倒入入栈栈，是为了保持元素顺序
             pushStack.push(outStack.pop());
         }
         pushStack.push(x);
@@ -26,6 +27,7 @@ class MyQueue {
 
     public int pop() {
         while (!pushStack.empty()){
+            //将入栈栈的元素倒入出栈栈，因为这样元素顺序才满足队列顺序
             outStack.push(pushStack.pop());
         }
         return outStack.pop();
@@ -33,6 +35,7 @@ class MyQueue {
 
     public int peek() {
         if(outStack.empty()){
+            //出栈栈为空将入栈栈中的元素加入出栈栈
             while (!pushStack.empty()){
                 outStack.push(pushStack.pop());
             }

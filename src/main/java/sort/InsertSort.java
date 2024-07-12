@@ -8,6 +8,7 @@ import java.util.Arrays;
  * @Author: zws
  * @Date: 2024-07-11
  * @Description: 插入排序
+ * 第一个元素为基本有序序列，倒序遍历有序序列找到后一个元素要插入的位置，遍历n-1遍即可
  */
 public class InsertSort implements BaseSort{
     public static void main(String[] args) {

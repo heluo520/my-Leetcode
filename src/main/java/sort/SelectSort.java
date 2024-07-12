@@ -10,7 +10,7 @@ import java.util.Arrays;
  *
  * @Author: zws
  * @Date: 2024-07-10
- * @Description: 选择排序
+ * @Description: 选择排序 找出最小值的索引后交换其与第一个元素的位置
  */
 public class SelectSort implements BaseSort{
     public static void main(String[] args)  {

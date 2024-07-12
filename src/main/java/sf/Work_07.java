@@ -12,7 +12,7 @@ import java.util.List;
  */
 class MinStack{
     public List<Integer> stack;
-    public List<Integer> min = new ArrayList<>();
+    public List<Integer> min = new ArrayList<>();//栈顶为最小元素
     public MinStack() {
         stack = new ArrayList<>();
     }
@@ -22,10 +22,10 @@ class MinStack{
             min.add(val);
         }else {
             for (int i = min.size()-1; i >= 0 ; i--) {
-                if(min.get(i)<=val){
+                if(min.get(i)<=val){//找到元素的插入位置
                     min.add(i+1,val);
                     break;
-                }else if(i==0){
+                }else if(i==0){//特殊位置
                     min.add(i,val);
                 }
             }

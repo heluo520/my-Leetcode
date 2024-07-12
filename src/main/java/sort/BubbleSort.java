@@ -7,7 +7,7 @@ import java.util.Arrays;
  *
  * @Author: zws
  * @Date: 2024-07-10
- * @Description:
+ * @Description: 冒泡排序 两两比较交换
  */
 public class BubbleSort implements BaseSort{
     public static void main(String[] args) {
