@@ -9,6 +9,7 @@ import java.util.Stack;
  * @Date: 2024-07-11
  * @Description: 解密字符串
  * n3[a2[ab]] -> naabaabaab
+ * TODO 官方题解
  */
 public class Work_09 implements PrintRunTime{
     public static void main(String[] args) {
