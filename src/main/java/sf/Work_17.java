@@ -7,6 +7,7 @@ package sf;
  * @Date: 2024-07-17
  * @Description: 找链表中点节点，为为偶数返回后一个节点
  * 思路：两个指针，一个统计链表长度算出中点，另一个通过算出的中点索引遍历到中点
+ * 思路二：快慢指针
  */
 public class Work_17 implements PrintRunTime{
     public ListNode middleNode(ListNode head) {
