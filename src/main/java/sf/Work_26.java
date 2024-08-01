@@ -1,8 +1,5 @@
 package sf;
 
-import java.util.Deque;
-import java.util.LinkedList;
-import java.util.Stack;
 
 /**
  * Created with Intellij IDEA.
